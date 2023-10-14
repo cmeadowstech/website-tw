@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Elements Quick Start</title>
+
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind Elements styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+
+    <!-- Tailwind CSS config -->
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
+</head>
+
+<body>
+
+    <!-- Nav -->
+
+    <nav
+        class="flex-no-wrap relative flex items-center justify-between py-2 lg:flex-wrap lg:justify-start lg:py-4 text-blue-900">
+
+        <div class="lg:container content flex flex-wrap items-center justify-between px-3 mx-auto">
+            <img src="https://unchainedstorage903845.blob.core.windows.net/static/cm.png" width="70px">
+            <ul class="list-style-none flex flex-col pl-0 lg:flex-row float-right" data-te-navbar-nav-ref>
+                <li class="mb-4 lg:mb-0 lg:pr-2 text-blue-900" data-te-nav-item-ref><a
+                        href="https://github.com/cmeadowstech">GitHub</a>
+                </li>
+
+                <li class="mb-4 lg:mb-0 lg:pr-2 text-blue-900" data-te-nav-item-ref><a
+                        href="https://dev.to/cmeadowstech">Blog</a>
+                </li>
+
+                <li class="mb-4 lg:mb-0 lg:pr-2 text-blue-900" data-te-nav-item-ref><a
+                        href="https://www.linkedin.com/in/cody-meadows/">Connect</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <div class="grid grid-cols-12 gap-4 text-blue-900 p-6">
+
+        <!-- Column -->
+        <div class="col-span-12 md:col-span-4"></div>
+
+        <!-- Column -->
+        <div class="col-span-12 md:col-span-8">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
+                <span class="block mb-6">Hi, I'm Cody Meadows</span>
+                <span class="block text-3xl">A Cloud Engineer who loves to automate processes to keep your systems
+                    running smoothly.</span>
+            </h1>
+        </div>
+
+    </div>
+
+    <!-- Skills -->
+
+    <div class="grid grid-cols-3 gap-8 text-neutral-50 lg:container mx-auto">
+
+        <!-- Each <div> is a single column.
+        Place some content inside to see the effect. -->
+        <div class="block rounded-lg p-6 bg-blue-900">
+            <h5 class="mb-2 text-xl font-medium leading-tight flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                </svg>
+
+                Skills
+            </h5>
+            <p>Azure, Git, Rest APIs, Microsoft 365, Scripting, Troubleshooting</p>
+        </div>
+        <div class="block rounded-lg p-6 bg-blue-900">
+            <h5 class="mb-2 text-xl font-medium leading-tight flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                </svg>
+                Tools
+            </h5>
+            <p>GitHub, Visual Studio Code, Azure DevOps, Terraform, Fiddler</p>
+        </div>
+        <div class="block rounded-lg p-6 bg-blue-900">
+            <h5 class="mb-2 text-xl font-medium leading-tight flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
+                </svg>
+
+                Languages
+            </h5>
+            <p>Python, PowerShell, Kusto Query Language, HTML, CSS</p>
+        </div>
+
+    </div>
+
+    <!-- Projects -->
+
+    <div class="grid grid-cols-2 gap-6 lg:container mx-auto my-6">
+
+        <!-- Each <div> is a single column.
+        Place some content inside to see the effect. -->
+        <div class="block rounded-lg p-6 bg-blue-900 text-white">
+            <div class="border-b-2 border-neutral-100 py-3">
+                <a href="https://github.com/cmeadowstech/Website">
+                    <h3>cmeadows.tech</h3>
+                </a>
+            </div>
+
+            <div class="py-3">
+                <p class="text-teal-300">Python (Django) • Terraform • CI/CD • HTML/CSS</p>
+                <p>Online resume built on top of Django, hosted on Azure App Service with infrastructure managed via
+                    Terraform IAC configurations. Repo public on GitHub includes CI/CD in the form of GitHub Actions to
+                    both
+                    deploy Terraform and publish App Content.</p>
+            </div>
+        </div>
+
+        <div class="block rounded-lg p-6 bg-blue-900 text-white">
+            <div class="border-b-2 border-neutral-100 py-3">
+                <a href="https://github.com/cmeadowstech/scripts/tree/main/Python/Plants/usdaScraper">
+                    <h3>USDA Plants API Scraper</h3>
+                </a>
+            </div>
+
+            <div class="py-3">
+                <p class="text-teal-300">Python • Cosmos DB</p>
+                <p>Python script that scrapes the API used by the USDA Plants database based on a list of select plants.
+                    Also scrapes embedded .docx files for content. Takes all of this information, and uploads it to an
+                    Azure
+                    Cosmos DB.</p>
+            </div>
+        </div>
+
+        <div class="block rounded-lg p-6 bg-blue-900 text-white">
+
+            <div class="border-b-2 border-neutral-100 py-3">
+                <a href="https://github.com/cmeadowstech/usdaPlantsFastApi">
+                    <h3>FastAPI</h3>
+                </a>
+            </div>
+
+            <div class="py-3">
+                <p class="text-teal-300">Python • Azure Functions • Cosmos DB</p>
+                <p>FastAPI framework used to create REST endpoints for items in Cosmos DB. Hosted on Azure Functions for
+                    serverless development as a microservice and Azure API management for access control.</p>
+            </div>
+        </div>
+
+        <div class="block rounded-lg p-6 bg-blue-900 text-white">
+
+            <div class="border-b-2 border-neutral-100 py-3">
+                <h3>Homelabs</h3>
+            </div>
+
+            <div class="py-3">
+                <p class="text-teal-300">Linux • Windows Server • O365 • Azure File Share</p>
+                <p>Raspberry PI configured with PiHole for DNS filtering / network protection and Samba for Network
+                    Attached
+                    Storage. Have also configured Windows Server in a VM, syncronized with M365 via Azure AD Connect and
+                    utilizing Azure File Shares.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-blue-900 text-neutral-50">
+        <div class="lg:container mx-auto flex flex-row items-center justify-center py-6">
+            <img src="https://unchainedstorage903845.blob.core.windows.net/static/cm.png" width="40px" class="px-2">
+            <p class="px-2">Copyright &copy Cody Meadows</p>
+        </div>
+    </footer>
+
+    <!-- Tailwind Elements JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+
+</html>
