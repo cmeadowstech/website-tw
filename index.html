@@ -35,6 +35,7 @@
         },
       };
     </script>
+
   </head>
 
   <body
@@ -87,7 +88,10 @@
             class="list-style-none ml-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
             data-te-navbar-nav-ref
           >
-            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+            <li
+              class="mb-4 lg:mb-0 lg:pr-2 border-b-2 border-transparent hover:border-white transition duration-150 ease-in-out"
+              data-te-nav-item-ref
+            >
               <a href="https://github.com/cmeadowstech">
                 <img
                   src="github-mark-white.svg"
@@ -96,13 +100,19 @@
                 GitHub
               </a>
             </li>
-            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+            <li
+              class="mb-4 lg:mb-0 lg:pr-2 border-b-2 border-transparent hover:border-white transition duration-150 ease-in-out"
+              data-te-nav-item-ref
+            >
               <a href="https://dev.to/cmeadowstech">
                 <img src="dev-badge.svg" class="inline ml-1 pb-[2px] w-4 h-4" />
                 Blog
               </a>
             </li>
-            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+            <li
+              class="mb-4 lg:mb-0 lg:pr-2 border-b-2 border-transparent hover:border-white transition duration-150 ease-in-out"
+              data-te-nav-item-ref
+            >
               <a href="https://www.linkedin.com/in/cody-meadows/">
                 <img src="linkedin.svg" class="inline ml-1 pb-[2px] w-4 h-4" />
                 Connect
@@ -116,7 +126,7 @@
     <!-- Hero -->
 
     <div
-      class="container mx-auto p-6 text-white min-h-[50vh] text-right drop-shadow-md"
+      class="md:container mx-auto p-6 text-white min-h-[50vh] text-right drop-shadow-md"
     >
       <h1
         class="text-4xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl md:w-[66%] float-right"
@@ -142,7 +152,9 @@
     >
       <!-- Each <div> is a single column.
         Place some content inside to see the effect. -->
-      <div class="block md:rounded-lg p-6 bg-[#111522] md:border-2 border-t-2 border-[#44702d]">
+      <div
+        class="block md:rounded-lg p-6 bg-[#111522] md:border-2 border-t-2 border-[#44702d]"
+      >
         <h5 class="mb-2 leading-tight flex flex-row text-xl font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +175,9 @@
         </h5>
         <p>Azure, Git, Rest APIs, Microsoft 365, Scripting, Troubleshooting</p>
       </div>
-      <div class="block md:rounded-lg p-6 bg-[#111522] md:border-2 md:border-[#44702d]">
+      <div
+        class="block md:rounded-lg p-6 bg-[#111522] md:border-2 md:border-[#44702d]"
+      >
         <h5 class="mb-2 leading-tight flex flex-row text-xl font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +197,9 @@
         </h5>
         <p>GitHub, Visual Studio Code, Azure DevOps, Terraform, Fiddler</p>
       </div>
-      <div class="block md:rounded-lg p-6 bg-[#111522] md:border-2 border-b-2 border-[#44702d]">
+      <div
+        class="block md:rounded-lg p-6 bg-[#111522] md:border-2 border-b-2 border-[#44702d]"
+      >
         <h5 class="mb-2 leading-tight flex flex-row text-xl font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +224,7 @@
 
     <!-- Projects -->
 
-    <div class="grid md:grid-cols-2 w-full gap-6 md:container mx-auto my-6">
+    <div class="grid md:grid-cols-2 w-full gap-6 md:container mx-auto my-6 drop-shadow-lg">
       <!-- Each <div> is a single column.
         Place some content inside to see the effect. -->
       <div
@@ -226,7 +242,7 @@
           <div class="border-b-2 border-neutral-100 py-3">
             <a
               href="https://github.com/cmeadowstech/Teahookup"
-              class="flex flex-row items-center"
+              class="relative flex flex-row items-center w-fit px-2 -left-2 transition hover:bg-[#9db143] hover:translate-x-2 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -274,7 +290,7 @@
           <div class="border-b-2 border-neutral-100 py-3">
             <a
               href="https://github.com/cmeadowstech/Website"
-              class="flex flex-row items-center"
+              class="relative flex flex-row items-center w-fit px-2 -left-2 transition hover:bg-[#9db143] hover:translate-x-2 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -315,7 +331,7 @@
         <div class="border-b-2 border-neutral-100 py-3">
           <a
             href="https://github.com/cmeadowstech/scripts/tree/main/Python/Plants/usdaScraper"
-            class="flex flex-row items-center"
+            class="relative flex flex-row items-center w-fit px-2 -left-2 transition hover:bg-[#9db143] hover:translate-x-2 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -351,7 +367,7 @@
         <div class="border-b-2 border-neutral-100 py-3">
           <a
             href="https://github.com/cmeadowstech/usdaPlantsFastApi"
-            class="flex flex-row items-center"
+            class="relative flex flex-row items-center w-fit px-2 -left-2 transition hover:bg-[#9db143] hover:translate-x-2 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -466,7 +482,7 @@
         class="md:container mx-auto min-h-[40vh] flex justify-between items-center bg-right bg-no-repeat"
         style="background-image: url(logos.png)"
       >
-        <div class="pl-20">
+        <div class="md:px-20">
           <h1
             class="text-4xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl"
           >
@@ -488,7 +504,7 @@
     </div>
 
     <!-- Experience -->
-    <div class="bg-[#111522] text-white p-6">
+    <div class="bg-[#111522] text-white px-6 py-20">
       <div class="md:container mx-auto">
         <h1
           class="text-4xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl text-center"
