@@ -31,3 +31,9 @@ resource "azurerm_static_site" "site" {
   location            = azurerm_resource_group.rg.location
   sku_tier = "Free"
 }
+
+# Make sure to mark this as sensitive if running this somewhere public, such as GitHub
+
+output "site_api_token" {
+  value = azurerm_static_site.site.api_key
+}
