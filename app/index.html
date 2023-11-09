@@ -126,6 +126,10 @@
           >A Cloud Engineer who loves to automate processes to keep your systems
           running smoothly.</span
         >
+        <span id ="msft_achievment" class="block text-xl"
+          >A Cloud Engineer who loves to automate processes to keep your systems
+          running smoothly.</span
+        >
       </h1>
     </div>
 
@@ -545,5 +549,19 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+
+    <script>
+      var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+      
+      fetch("https://learn.microsoft.com/api/achievements/user/8aa3eeff-30c2-41c3-af5d-63c7d534c269", requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+      
+    </script>
+
   </body>
 </html>
